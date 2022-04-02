@@ -1,0 +1,171 @@
+/* view contacto */
+
+/* principal */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    justify-items: center;
+    height: 60vh;
+
+    &__contenedor {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    
+    &__imagen {
+        width: 90%;
+    }
+    
+    &__texto {
+        grid-area: 1 / 4 / 2 / 7;
+        text-align: center;
+        align-self: center;
+    }
+    
+    &__titulo {
+        font-size: 6em;
+    }
+    
+    &__parrafo {
+        font-size: 3em;
+    }
+    
+    &__boton {
+        text-decoration: none;
+        color: $hover;
+        text-shadow: 1px 1px 5px #00000050;
+        transition: all .2s ease-in;
+
+        &:hover {
+            text-shadow: 1px 1px 6px #f17373;
+            -webkit-text-stroke: 1px black;
+        }
+    }
+    
+}
+
+/* formulario */
+
+.formulario {
+    height: 20vh;
+    background-color: #83808050;
+    margin: 1em auto;
+    border: solid 4px #000000;
+    border-radius: 20px;
+
+    &__principal {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 16.66%);
+        grid-template-rows: 20% repeat(4, 15%) 20%;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.5em;
+
+        .nombre__apellido {
+            grid-area: 2 / 1 / 4 / 4;
+            width: 70%;
+            font-size: 1.5em;
+            #nombreform {
+                width: 80%;
+                border: solid 2px #000000
+            }
+        }
+        .email {
+            grid-area: 2 / 4 / 4 / 7;
+            width: 100%;
+            font-size: 1.5em;
+            #emailform {
+                width: 80%;
+                border: solid 2px #000000
+            }
+    }
+        .numero__tel {
+            grid-area: 4 / 1 / 6 / 4;
+            font-size: 1.5em;
+
+            #numeroform {
+                width: 50%;
+                border: solid 2px #000000;
+            }
+        }
+    }
+    
+    &__titulo {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    &__pregunta {
+        grid-area: 4 / 4 / 6 / 6;
+        font-size: 1.5em;
+    }
+    
+    &__si {
+        grid-area: 4 / 6 / 5 / 7;
+        font-size: 1.5em;
+        #si {
+            accent-color: $principal;
+        }
+    }
+    
+    &__no {
+        grid-area: 5 / 6 / 6 / 7;
+        font-size: 1.5em;
+        #no {
+            accent-color: $principal;
+        }
+    }
+    
+    .enviar {
+        grid-area: 6 / 3 / 7 / 5;
+        margin: .2em;
+        font-size: 1.1em;
+        font-family: $font-primary;
+        border: solid 1px $secundario;
+        border-radius: 20px;
+        width: 40%;
+        background-color: $principal;
+        color: $secundario;
+        transition: all .2s ease-in-out;
+
+            &:hover {
+                color: $hover;
+                border: solid 2px $hover;
+            }
+    }
+}
+
+@media (max-width: 768px){
+/* main */
+    .contacto {
+            height: 30vh;
+
+            &__contenedor {
+                display: none;
+            }
+
+            &__texto {
+                grid-area: 1 / 1 / 7 / 7;
+                font-size: .8em;
+            }
+        }
+
+/* formulario */
+        .formulario {
+            height: 40vh;
+            font-size: .7em;
+            text-align: center;
+
+            &__principal {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            } 
+        }
+
+/* footer */
+        .footer__contacto {
+            height: 20vh;
+        } 
+}
+

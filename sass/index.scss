@@ -1,0 +1,15 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "./misc/variables";
+@import "./misc/normalize";
+
+/* partials */
+
+@import "./partials/header";
+@import "./partials/footer";
+
+/* views */
+
+@import "./views/home";
+@import "./views/contacto";
+

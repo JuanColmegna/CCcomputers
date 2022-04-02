@@ -1,0 +1,28 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* globals */
+
+html {
+    font-size: 62.5%;
+    font-family: $font-primary;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+body {
+    background: linear-gradient(to bottom, $bg-principal 0%, $secundario 40%);
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,18 @@
+.footer {
+    background-color: $principal;
+    color: $secundario;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+
+    &__boton {
+        text-decoration: none;
+        color: $hover;
+        transition: all .2s ease-in;
+        
+        &:hover {
+            color: $secundario;
+            text-shadow: 1px 1px 10px $secundario;
+        }
+    }
+}
