@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Computer's | Servicio Técnico Informático</title>
+    <link rel="shortcut icon" href="../public/img/iconimage.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+<!-- header -->
+    <header class="header">
+        <nav class="nav nav__contacto container">
+            <a class="nav__enlace" href="../index.html">
+                    <img class="nav__img" src="../public/img/logoCC.png" alt="Logo de CC computer's servicio técnico especializado en herramientas informáticas">
+            </a>
+            <label for="menu" class="nav__label">
+            <ul class="nav__menu">
+                <li class="nav__items">
+                    <a href="../index.html" class="nav__links">Volver al Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="contacto__principal container">
+        <figure class="contacto__contenedor">
+            <img src="../public/img/contactoprincipal.png" alt="Contacto por whatsapp" class="contacto__imagen">
+        </figure>
+        <div class="contacto__texto">
+            <h1 class="contacto__titulo">¡hablanos por whatsapp!</h1>
+            <p class="contacto__parrafo">mandanos un mensaje 342-6156882 o hace click <a class="contacto__boton" href="https://wa.me/+5493426156882">aquí</a> para ir directamente a la aplicación</p>
+        </div>
+    </main>
+
+<!-- formulario -->
+    <section class="formulario container">
+        <form class="formulario__principal" method="post">
+            <h2 class="formulario__titulo">
+            Completa este formulario y recibí nuestras ofertas especiales
+            </h2>
+            <label for="nombre__apellido" class="nombre__apellido">Nombre
+                <input type="text" placeholder="Nombre y Apellido" name="nombre__apellido" id="nombreform" required>
+            </label>
+            <label for="email" class="email">E-mail
+                <input type="email" placeholder="email@example.com" name="email" id="emailform" required>
+            </label>
+            <label for="numerotel" class="numero__tel">N° de Contacto
+                <input type="tel" placeholder="telefono" name="numerotel" id="numeroform" required>
+            </label>
+            <p class="formulario__pregunta">¿Desea recibir información por celular?</p>
+            <label for="si" class="formulario__si">si
+                <input type="radio" name="siono" id="si" value="si" checked>
+            </label>
+            <label for="no" class="formulario__no">no
+                <input type="radio" name="siono" id="no" value="no">
+            </label>
+            <button type="submit" name="enviar información" class="enviar">Enviar</button>
+        </form>
+    </section>
+<!-- footer -->
+<footer class="footer footer__contacto"> 
+    <h3>CC Computer's - Todos los derechos reservados</h3>
+</footer>
+</body>
+</html>

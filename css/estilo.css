@@ -1,0 +1,636 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* variables */
+
+:root {
+    --principal: #000000;
+    --secundario: #FFFFFF;
+    --hover: #f17373;
+    --bg-principal: #f9fbab;
+    --font-primary: 'Bebas Neue', cursive;
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    scroll-behavior: smooth;
+}
+
+/* contenedor */
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* body */
+
+body {
+    background: linear-gradient(to bottom, var(--bg-principal) 0%, var(--secundario) 40%);
+    background-repeat: no-repeat;
+}
+
+/* header */
+
+.header {
+    max-width: 1440px;
+    height: 16vh;
+    margin: 0 auto;
+}
+
+.nav__contacto {
+    text-align: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-rows: 8vh 8vh;
+    justify-content: center;
+}
+
+.nav__enlace {
+    grid-row: 1 / 2;
+    justify-self: center;
+}
+
+.nav__img {
+    height: 100%;
+}
+
+.nav__menu {
+    grid-row: 2 / 3;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.5em;
+    align-items: center;
+}
+
+.nav__items {
+    font-size: 2.4em;
+}
+
+.nav__links {
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 2px #00000061;
+    transition: color .3s ease-in-out;
+}
+
+.nav__links:hover {
+    color: var(--secundario);
+}
+
+/* main */
+.principal {
+    padding-top: 3em;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.principal__imagen {
+    grid-column: 1 / 2 ;
+}
+
+.principal__imagen img {
+    filter: drop-shadow(-21px -15px 31px #00000050);
+    width: 90%;
+}
+
+.principal__texto {
+    width: 35em;
+    height: 55vh;
+    max-height: 430px;
+    border-left: solid 3px #000000;
+    text-align: left;
+    grid-column: 2 / 3;
+}
+
+.principal__titulo {
+    font-size: 7em;
+    margin-left: 2rem;
+}
+
+.principal__parrafo {
+    font-size: 2em;
+    margin-left: 2rem;
+}
+
+/* seccion logos de marcas */
+
+.logos {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logos__texto {
+    font-size: 1em;
+    letter-spacing: .2em;
+    margin-left: 2em;
+}
+
+.logos__imagen {
+    width: 80%;
+    align-self: center;
+    padding: 2em;
+}
+
+/* seccion servicio tecnico */
+
+.servicio {
+    margin-top: 3em;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+}
+
+.servicio__cuadro {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 3em;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--bg-principal);
+    border:solid 3px var(--principal)
+}
+
+
+.servicio__img {
+    grid-area: 2 / 1 / 5 / 3;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.servicio__descripcion {
+    grid-area: 2 / 3 / 5 / 6;
+}
+
+.servicio__exclamacion {
+    font-size: 3em;
+    letter-spacing: .17em;
+}
+
+.servicio__texto {
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* seccion cámaras */
+
+.camaras {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+}
+
+.camaras__cuadro {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 3em;
+    text-align: center;
+    height: 50%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--bg-principal);
+    border:solid 3px var(--principal)
+}
+
+
+.camaras__img {
+    grid-area: 2 / 4 / 5 / 6;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.camaras__descripcion {
+    grid-area: 2 / 1 / 5 / 4;
+    text-align: right;
+}
+
+.camaras__exclamacion {
+    font-size: 3em;
+    letter-spacing: .17em;
+}
+
+.camaras__texto {
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* seccion insumos */
+
+.insumos {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+}
+
+.insumos__cuadro {
+    grid-area: 1 / 2 / 2 / 5;
+    font-size: 3em;
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--bg-principal);
+    border:solid 3px var(--principal)
+}
+
+
+.insumos__img {
+    grid-area: 2 / 1 / 5 / 3;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.insumos__descripcion {
+    grid-area: 2 / 3 / 5 / 6;
+}
+
+.insumos__exclamacion {
+    font-size: 3em;
+    letter-spacing: .17em;
+}
+
+.insumos__texto {
+    letter-spacing: .15em;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+/* seccion contacto */
+
+.contacto__seccion {
+    height: 20vh;
+    background: linear-gradient(#f9fbab70, #f9fbab70), url(../public/img/contactoparaa.png);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5em;
+    letter-spacing: .2em;
+}
+
+.contacto__enlace {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    width: 15%;
+    text-align: center;
+    border:solid 4px var(--secundario);
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.contacto__enlace:hover {
+    color: var(--hover);
+    border-color: var(--hover);
+}
+
+/* seccion mapa */
+
+.mapa {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: repeat(6, 16.66%);
+    justify-items: center;
+    align-items: center;
+}
+
+.mapa__local {
+    grid-area: 1 / 1 / 2 / 4;
+    font-size: 2.8em;
+    margin-top: 2em;
+}
+
+.mapa__img {
+    grid-area: 2 / 1 / 7 / 4;
+    height: 80%;
+}
+
+.mapa__ubicacion {
+    grid-area: 1 / 4 / 2 / 7;
+    font-size: 2.5em;
+    margin-top: 2em;
+}
+
+.mapa__contenedor {
+    grid-area: 2 / 4 / 6 / 7;
+    height: 60%;
+    border: solid 3px #000000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapa__texto {
+    grid-area: 6 / 4 / 7 / 7;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--principal);
+    color: var(--secundario);
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.footer__boton {
+    text-decoration: none;
+    color: var(--hover);
+    transition: all .2s ease-in;
+}
+
+.footer__boton:hover {
+    color: var(--secundario);
+    text-shadow: 1px 1px 10px var(--secundario);
+}
+
+/* view contacto */
+
+/* principal */
+
+.contacto__principal {
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    justify-items: center;
+    height: 60vh;
+}
+
+.contacto__contenedor {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.contacto__imagen {
+    width: 90%;
+}
+
+.contacto__texto {
+    grid-area: 1 / 4 / 2 / 7;
+    text-align: center;
+    align-self: center;
+}
+
+.contacto__titulo {
+    font-size: 6em;
+}
+
+.contacto__parrafo {
+    font-size: 3em;
+}
+
+.contacto__boton {
+    text-decoration: none;
+    color: var(--hover);
+    text-shadow: 1px 1px 5px #00000050;
+    transition: all .2s ease-in;
+}
+
+.contacto__boton:hover {
+    text-shadow: 1px 1px 6px #f17373;
+    -webkit-text-stroke: 1px black;
+}
+
+/* formulario contacto */
+
+.formulario {
+    height: 20vh;
+    background-color: #83808050;
+    margin: 1em auto;
+    border: solid 4px #000000;
+    border-radius: 20px;
+}
+.formulario__principal {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: 20% repeat(4, 15%) 20%;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.formulario__titulo {
+    grid-area: 1 / 2 / 2 / 6;
+}
+
+.nombre__apellido {
+    grid-area: 2 / 1 / 4 / 4;
+    width: 70%;
+    font-size: 1.5em;
+}
+
+#nombreform {
+    width: 80%;
+    border: solid 2px #000000
+}
+
+
+.email {
+    grid-area: 2 / 4 / 4 / 7;
+    width: 100%;
+    justify-self: self-start;
+    font-size: 1.5em;
+}
+
+#emailform {
+    width: 80%;
+    border: solid 2px #000000
+}
+
+.numero__tel {
+    grid-area: 4 / 1 / 6 / 4;
+    font-size: 1.5em;
+}
+
+#numeroform {
+    width: 50%;
+    border: solid 2px #000000;
+}
+
+.formulario__pregunta {
+    grid-area: 4 / 4 / 6 / 6;
+    font-size: 1.5em;
+}
+
+.formulario__si {
+    grid-area: 4 / 6 / 5 / 7;
+    font-size: 1.5em;
+}
+
+.formulario__no {
+    grid-area: 5 / 6 / 6 / 7;
+    font-size: 1.5em;
+}
+
+#si, #no {
+    accent-color: var(--principal);
+}
+
+.enviar {
+    grid-area: 6 / 3 / 7 / 5;
+    margin: .2em;
+    font-size: 1.1em;
+    font-family: var(--font-primary);
+    border: solid 1px var(--secundario);
+    border-radius: 20px;
+    width: 40%;
+    background-color: var(--principal);
+    color: var(--secundario);
+    transition: all .2s ease-in-out;
+}
+
+.enviar:hover {
+    color: var(--hover);
+    border: solid 2px var(--hover);
+}
+
+@media (max-width: 1024px){
+/* secciones servicio tecnico, camaras e insumos */
+    .servicio, .camaras, .insumos {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 768px){
+/* nav */
+    .nav {
+        font-size: .8em;
+    }
+
+/* main */
+    .principal__imagen {
+        display: none;
+    }
+
+    .principal__texto{
+        grid-area: 1 / 1 / 2 / 3;
+        margin-left: 20px;
+        justify-self: center;
+        border: none;
+    }
+/* secciones servicio tecnico, camaras e insumos */
+    .servicio, .camaras, .insumos {
+        font-size: .5em;
+    }
+
+    .servicio__cuadro, .camaras__cuadro, .insumos__cuadro {
+        height: 30%;
+    }
+/* seccion contacto */
+    .contacto__enlace {
+        font-size: .5em;
+        width: 40%;
+    }
+/* seccion mapa */
+    .mapa__img {
+        height: 50%;
+    }
+
+    .mapa__contenedor {
+        width: 80%;
+        height: auto;
+    }
+/* View contacto */
+/* main */
+    .contacto__principal {
+        height: 30vh;
+    }
+
+    .contacto__contenedor {
+        display: none;
+    }
+
+    .contacto__texto {
+        grid-area: 1 / 1 / 7 / 7;
+        font-size: .8em;
+    }
+
+/* formulario */
+    .formulario {
+        height: 40vh;
+        font-size: .7em;
+        text-align: center;
+    }
+    .formulario__principal {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+/* footer */
+    .footer__contacto {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 420px){
+/* nav */
+    .nav{
+        font-size: .6em;
+    }
+/* main */
+    .principal__texto {
+        margin-left: 0;
+        width: 90%
+    }
+
+    .principal__titulo {
+        font-size: 5em;
+    }
+/* secciones servicio tecnico, camaras e insumos */
+    .servicio, .camaras, .insumos {
+        height: 40vh;
+    }
+    .servicio__cuadro, .camaras__cuadro, .insumos__cuadro {
+        height: 30%;
+        font-size: 2em;
+    }
+/* seccion contacto */
+    .contacto__seccion {
+        font-size: 2em;
+    }
+
+    .contacto__enlace {
+        font-size: .5em;
+        width: 40%;
+    }
+/* seccion mapa */
+    .mapa {
+        font-size: .5em;
+    }
+
+    .mapa__img {
+        height: 30%;
+    }
+
+    .mapa__contenedor {
+        height: 50%;
+    }
+/* footer */
+    .footer {
+        font-size: .9em;
+    }
+}
