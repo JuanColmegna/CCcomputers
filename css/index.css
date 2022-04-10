@@ -1,5 +1,14 @@
 /* imports */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.cuadros-var {
+  width: 30%; }
+
+.cuadros-var {
+  width: 50%; }
+
+.cuadros-var {
+  width: 70%; }
+
 /* reset */
 *,
 *::before,
@@ -55,7 +64,7 @@ body {
       .header .nav__links:hover {
         color: #FFFFFF; }
 
-.footer {
+.footer, .footer__contacto {
   background-color: #000000;
   color: #FFFFFF;
   text-align: center;
@@ -331,7 +340,7 @@ body {
   .mapa__contenedor {
     height: 50%; }
   /* footer */
-  .footer {
+  .footer, .footer__contacto {
     font-size: .9em; } }
 
 /* view contacto */
@@ -427,6 +436,9 @@ body {
     .formulario .enviar:hover {
       color: #f17373;
       border: solid 2px #f17373; }
+
+.footer__contacto {
+  color: #f17373; }
 
 @media (max-width: 768px) {
   /* main */

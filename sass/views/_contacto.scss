@@ -49,8 +49,7 @@
     height: 20vh;
     background-color: #83808050;
     margin: 1em auto;
-    border: solid 4px #000000;
-    border-radius: 20px;
+    @include border(solid 4px #000000, 20px);
 
     &__principal {
         width: 100%;
@@ -133,6 +132,11 @@
                 border: solid 2px $hover;
             }
     }
+}
+
+.footer__contacto{
+    @extend .footer;
+    color: #f17373;
 }
 
 @media (max-width: 768px){

@@ -3,3 +3,14 @@ $secundario: #FFFFFF;
 $hover: #f17373;
 $bg-principal: #f9fbab;
 $font-primary: 'Bebas Neue', cursive;
+
+$cuadros: (
+    small: 30%,
+    medium: 50%,
+    large:70%);
+
+@each $var, $val in $cuadros {
+    .cuadros-#{var}{
+        width: #{$val};
+    }
+}

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "./misc/variables";
 @import "./misc/normalize";
+@import "./misc/mixins";
 
 /* partials */
 
@@ -12,4 +13,3 @@
 
 @import "./views/home";
 @import "./views/contacto";
-
