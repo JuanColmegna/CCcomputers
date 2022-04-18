@@ -21,7 +21,8 @@
 html {
   font-size: 62.5%;
   font-family: "Bebas Neue", cursive;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 .container {
   max-width: 1080px;
@@ -63,6 +64,10 @@ body {
       transition: color .3s ease-in-out; }
       .header .nav__links:hover {
         color: #FFFFFF; }
+
+@media (max-width: 320px) and (max-width: 420px) {
+  .nav__items {
+    white-space: nowrap; } }
 
 .footer, .footer__contacto {
   background-color: #000000;
