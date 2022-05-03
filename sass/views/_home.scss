@@ -2,7 +2,7 @@
 
 .principal {
     padding-top: 3em;
-    height: 60vh;
+    height: 65vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
@@ -38,6 +38,7 @@
 
 /* seccion logos */
 .logos {
+    height: 19vh;
     display: flex;
     flex-flow: column wrap;
     
@@ -214,40 +215,24 @@
 /* seccion mapa*/
 
 .mapa {
-    height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(6, 16.66%);
-    grid-template-rows: repeat(6, 16.66%);
-    justify-items: center;
-    align-items: center;
-    
-    &__local {
-        grid-area: 1 / 1 / 2 / 4;
-        font-size: 2.8em;
-        margin-top: 2em;
-    }
-    
-    &__img {
-        grid-area: 2 / 1 / 7 / 4;
-        height: 80%;
-    }
+    height: 35vh;
+    margin: 0 auto;
+    text-align: center;
     
     &__ubicacion {
-        grid-area: 1 / 4 / 2 / 7;
         font-size: 2.5em;
         margin-top: 2em;
     }
     
     &__contenedor {
-        grid-area: 2 / 4 / 6 / 7;
-        height: 60%;
+        margin: 1em auto;
+        width: 40%;
         border: solid 3px #000000;
         border-radius: 20px;
         overflow: hidden;
     }
     
     &__texto {
-        grid-area: 6 / 4 / 7 / 7;
         font-size: 2em;
         margin-bottom: 2em;
     }
@@ -306,12 +291,7 @@
                 width: 40%;
             } 
         /* seccion mapa */
-            .mapa__img {
-                height: 50%;
-            }
-        
             .mapa__contenedor {
-            width: 80%;
             height: auto;
             } 
 }
@@ -365,14 +345,6 @@
             width: 40%;
         } 
     /* seccion mapa */
-        .mapa {
-            font-size: .5em;
-        }
-    
-        .mapa__img {
-            height: 30%;
-        }
-    
         .mapa__contenedor {
             height: 50%;
         }
